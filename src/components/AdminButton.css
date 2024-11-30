@@ -1,0 +1,20 @@
+/* Add a higher z-index to the AdminButton */
+.admin-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Green button */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 10; /* Ensure it appears above other elements */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}

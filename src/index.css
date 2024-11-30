@@ -1,0 +1,34 @@
+/* Reset margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure body and html fill the entire viewport */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Apply blur to the background image */
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.sunhotelandresort.com/wp-content/uploads/2024/06/Abu-Resort.jpg') no-repeat center center/cover;
+  background-size: cover; /* Ensure the image scales properly */
+  background-color: rgba(0, 0, 0, 0.5); /* Add transparency layer */
+  backdrop-filter: blur(8px); /* Apply blur effect */
+  z-index: 1; /* Keep this layer below the content */
+}
+
+/* Ensure the login container is above the background */
+.login-container {
+  position: relative; /* Make sure it appears above the background */
+  z-index: 2; /* Set a higher z-index */
+}
+
+
